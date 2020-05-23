@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   entry: "./src/index.js",
   output: {
-    filename: "bundle.[contenthash].js",
+    filename: "bundle.js",
     /* public path should be the website address or where we are keeping the build" */
     path: path.resolve(__dirname, "./dist"),
     publicPath: "dist/",
@@ -41,7 +41,7 @@ module.exports = {
   plugins: [
     new TerserPlugin(),
     new MiniCssExtractPlugin({
-      filename: "styles.[contenthash].css",
+      filename: "styles.css",
     }),
   ],
 };
