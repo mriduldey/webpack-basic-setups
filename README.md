@@ -2,6 +2,8 @@
 
 It is a repository with various webpack set ups, and here you can find different version with addition of specific webpack settings, and which version is denoting which settings is given below.
 
+run **npm run build** to get build folder
+
 ## version 1.0.0
 
 1. Basic integration of webpack in a single page project.
