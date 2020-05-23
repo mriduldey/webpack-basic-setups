@@ -1,0 +1,30 @@
+$button-color: #2dbcbd;
+$p-color: #f30b0b;
+
+.hello-webpack-button {
+  margin: auto;
+  margin-bottom: 2rem;
+  display: block;
+  padding: 0.3rem 0.5rem;
+  background-color: $button-color;
+  border: 1px solid #1c7979;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.hello-webpack-button:focus {
+  outline: none;
+}
+
+.hello-webpack-p {
+  display: inline-block;
+  background-color: $p-color;
+  margin: 3px;
+  color: #fff;
+  font-weight: 500;
+  padding: 3px 7px 4px;
+  border: 1px solid #c50808;
+  border-radius: 6px;
+}
