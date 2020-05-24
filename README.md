@@ -10,15 +10,15 @@ run **npm run build** to get build folder
 
 ```javascript
 module.exports = {
-   entry: "./src/index.js",
-   output: {
-   filename: "bundle.[contenthash].js",
-   path: path.resolve(\_\_dirname, "./dist"),
-   /_ public path should be the website address or where we are keeping the build" _/
-   publicPath: "dist/",
-   },
-   mode: "none",
-}
+  entry: "./src/index.js",
+  output: {
+    filename: "bundle.[contenthash].js",
+    path: path.resolve(\_\_\_dirname, "./dist"),
+    //public path should be the website address or where we are keeping the build
+    publicPath: "dist/",
+  },
+  mode: "none",
+};
 ```
 
 2. Webpack loaders: handling image, css, sass and babel loader basic configuration.
