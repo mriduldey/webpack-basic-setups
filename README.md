@@ -55,7 +55,7 @@ module.exports = {
 };
 ```
 
-3. Using Webpack plugin to extract all css files inside a single and seperate css file. Without it all css will be inside .js file header style block (more will be in next version)
+3. Using Webpack plugin to i) minify our js bundle ii) extract all css files inside a single and seperate css file (Without it all css will be inside .js file header style block). (more will be in next version)
 
 ```js
 module.exports = {
