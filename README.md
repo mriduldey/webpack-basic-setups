@@ -67,3 +67,49 @@ module.exports = {
   ],
 };
 ```
+
+## version 2.0.0
+
+1. Adding hashnames to .js and .css bundle to improve cash browsing
+
+```js
+module.exports = {
+  entry: "./src/index.js",
+  output: {
+    filename: "bundle.[contenthash].js",
+    /* public path should be the website address or where we are keeping the build" */
+    path: path.resolve(__dirname, "./dist"),
+    publicPath: "",
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: "styles.[contenthash].css",
+    }),
+  ],
+};
+```
+
+2. Cleaning webpack output path using clean-webpack-plugin before building.
+
+```js
+module.exports = {
+  entry: "./src/index.js",
+  output: {
+    filename: "bundle.[contenthash].js",
+    /* public path should be the website address or where we are keeping the build" */
+    path: path.resolve(__dirname, "./dist"),
+    publicPath: "",
+  },
+  plugins: [new CleanWebpackPlugin()],
+};
+```
+
+3. Generating a automated html file inside output path to automatically include hashed bundle.js and styles.css and also set the title of the html file.
+
+```js
+plugins: [
+  new HtmlWebpackPlugin({
+    title: "Hello Webpack",
+  }),
+];
+```
